@@ -2,7 +2,7 @@ import { PropTypes } from "prop-types";
 import styles from "./Select.module.css";
 
 const Select = ({ item, onclick }) => (
-  <option onClick={onclick} className={styles.selectItem}>
+  <option onClick={onclick} tabIndex="0" className={styles.selectItem}>
     {item.label}
   </option>
 );
