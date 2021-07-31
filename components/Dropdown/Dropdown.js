@@ -1,14 +1,14 @@
-import { useEffect, useState, useRef } from 'react';
-import styles from './Dropdown.module.css';
-import Select from './Select';
+import { useEffect, useState, useRef } from "react";
+import styles from "./Dropdown.module.css";
+import Select from "./Select";
 
 // Prepend with 'https://' and uncomment line 46
 const options = [
-  { value: 'www.google.com', label: 'Careers' },
-  { value: 'www.google.com', label: 'Field Input 1' },
-  { value: 'www.google.com', label: 'Field Input 2' },
-  { value: 'www.google.com', label: 'Field Input 3' },
-  { value: 'www.google.com', label: 'Field Input 4' },
+  { value: "www.google.com", label: "Careers" },
+  { value: "www.google.com", label: "Field Input 1" },
+  { value: "www.google.com", label: "Field Input 2" },
+  { value: "www.google.com", label: "Field Input 3" },
+  { value: "www.google.com", label: "Field Input 4" },
 ];
 
 const useClickOutside = (handler) => {
@@ -20,9 +20,9 @@ const useClickOutside = (handler) => {
         handler();
       }
     };
-    document.addEventListener('mousedown', refHandler);
+    document.addEventListener("mousedown", refHandler);
     return () => {
-      document.removeEventListener('mousedown', refHandler);
+      document.removeEventListener("mousedown", refHandler);
     };
   });
   return domNode;
@@ -58,7 +58,8 @@ const Dropdown = () => {
         role="button"
         tabIndex={0}
         onKeyDown={toggleSelectMenu}
-        onClick={toggleSelectMenu}>
+        onClick={toggleSelectMenu}
+      >
         {selectedItem.label}
       </div>
       {isOpen && (
