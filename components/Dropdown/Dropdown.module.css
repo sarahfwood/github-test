@@ -34,4 +34,8 @@
   font-weight: normal;
   font-size: 1.25rem;
   line-height: 150%;
+  border: none;
+  background: #fff;
+  min-width: 100%;
+  text-align: left;
 }

@@ -52,16 +52,14 @@ const Dropdown = () => {
 
   return (
     <div ref={domNode} className={styles.dropdownWrapper}>
-      <div
+      <button
         className={styles.selectedItem}
-        aria-haspopup
-        role="button"
-        tabIndex={0}
+        type="submit"
         onKeyDown={toggleSelectMenu}
         onClick={toggleSelectMenu}
       >
         {selectedItem.label}
-      </div>
+      </button>
       {isOpen && (
         <ul className={styles.ul_select}>
           {options.map((item, index) => (
