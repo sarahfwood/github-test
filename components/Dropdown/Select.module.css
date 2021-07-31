@@ -1,0 +1,13 @@
+.selectItem {
+  padding: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 150%;
+  position: relative;
+}
+
+.selectItem:hover {
+  background: rgba(99, 0, 214, 0.1);
+  color: rgba(99, 0, 214, 1);
+}
