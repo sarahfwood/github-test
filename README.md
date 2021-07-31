@@ -1,5 +1,13 @@
 # Next + Netlify Starter
 
+# git checkout -b development main
+
+(Industry likes to make a copy of main and name it DEVELOPMENT... then merge all other branches into it as they're built)
+
+# git checkout -b feature/Dropdown development
+
+(feature/Dropdown: Silly JUNIOR dev trying her bestest to build a dropdown WITHOUT a library)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed50f56e-4fc2-4c98-8b66-1e5074c6f3d3/deploy-status)](https://app.netlify.com/sites/next-starter/deploys)
 
 This is a [Next.js](https://nextjs.org/) v11 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
